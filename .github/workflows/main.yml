@@ -19,6 +19,7 @@ jobs:
       contents: read
       id-token: write
     runs-on: ubuntu-latest
+    environment: production
     steps:
       # Checks out the repository this file is in
       - name: Checkout code
