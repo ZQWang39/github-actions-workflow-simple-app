@@ -1,11 +1,11 @@
 name: Build and deploy an app to AKS
 
 env:
-  AZURE_CONTAINER_REGISTRY: "ziqiaksdemo"
-  CONTAINER_NAME: "hello-world"
-  RESOURCE_GROUP: "GitHub-actions-deploy-to-AKS"
-  CLUSTER_NAME: "AKS-demo"
-  DEPLOYMENT_MANIFEST_PATH: "kubernetes"
+  AZURE_CONTAINER_REGISTRY: ${{ vars.AZURE_CONTAINER_REGISTRY }}
+  CONTAINER_NAME: ${{ vars.CONTAINER_NAME }}
+  RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP }}
+  CLUSTER_NAME: ${{ vars.CLUSTER_NAME }}
+  DEPLOYMENT_MANIFEST_PATH: ${{ vars.DEPLOYMENT_MANIFEST_PATH }}
 
 on:
   push:
